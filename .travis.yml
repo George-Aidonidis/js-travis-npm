@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '6'
+script:
+- npm test
+before_deploy: Deploying to npm
+deploy:
+  provider: npm
+  email: george.aidonidis@gmail.com
+  api_key:
+    secure: RL8njcC7Mp2HEOIPKuMyy25XXsYk7RrxhZe8NZfAsVX+o5weQQZ1YuTzsJXPFWwARLnZz1iCRTBatJzEGncZdGm8hTlmM90M9QqHOAr6tE76PDG3groMQoK6b7SXO4OP3xfr8xYHM8DU2zAI9LWf5x3UgdWogZk01EOGoQ4JjY7R3/BQpsQAHwLEIabQ2NI+Mm42LPpTmTl0wSWCWv2c+JPer38JmFlokFc995zdC9NnDHM/ffMSfPb8alpeccGJz0Gx+ktS7Sfxqbizg3MQPcjTdA/Aplog361jDH5e2XE2l5W+V04fOSuPnPt0N48C/zm3McuRyPI1k+3MVfjPpiVzo2ABOqtuwbCWMoU44E5kUA27ueh9S2mvrU3BI2w5zUQNhbTwpzI4SIuG3qScN+qGymyH6LxFUI3KB/bR86anTRREgT+Uus6anxHRqSJKp58dhmTODmVPqBw+iISJEylzf0LI+hcixGSqAFbjDcaxLdXPY5LrLqAbVBcvRzVtq30U2+oeSE0zAguGP9dnB2AR8kpmXGGPvTNsIhAz9AtUHeeHpxzhB9Kp7q6EK/J0uatgVjT0uJeMSBatXI/KS9XRK9gx+x52F04WNpPbrhuch2egvrWMhJ432VY8g1BtJb7OBKe2FQuH7L4kbZfXIEEjD30BAfOJvVGQHdjaFBM=
+  on:
+    tags: true
+    repo: George-Aidonidis/js-travis-npm
