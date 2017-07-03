@@ -3,7 +3,7 @@ node_js:
 - '6'
 script:
 - npm test
-before_deploy: Deploying to npm
+before_deploy: "echo 'Deploying to npm'"
 deploy:
   provider: npm
   email: george.aidonidis@gmail.com
